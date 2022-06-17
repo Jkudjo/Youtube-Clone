@@ -1,193 +1,287 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-    
-            p{
-                font-family: Roboto, Arial, sans-serif;
-                margin-top: 0;
-                margin-bottom: 0;
-
-            }
-            .thumbnail{
-                width: 300px;
-        
-                display: block;
-                
-            }
-            .searchbar{
-                display: block;
-                
-            }
-
-        
-            .video-preview{
-                display: inline-block;
-                width: 300px;
-                vertical-align:top ;
-                margin-right: 15px;
-
-                
-            } 
-
-            .video-info-grid{
-                display: grid;
-                grid-template-columns: 50px 1fr;
-                
-
-            }
-            .channel-picture{
-               
-            
-            }
-        
-            .video-info{
-            
-              
-
-
-            }
-            .video-title{
-                margin-top: 0;
-                font-size: 14px;
-                font-weight: 500;
-                line-height: 18px;
-                margin-bottom: 12px;
-            }
-            
-            .profile-picture{
-                border-radius: 46px;
-                width: 100%;
-            }
-
-            .video-author,.video-stats{
-                font-size: 12px;
-                color: rgb(96,96,96)
-            
-
-            }
-            .video-author{
-                margin-top: 0px;
-            
-            }
-            
-        </style>
-
+<head>
+   
                <div> <!--Title Div( Tab Name and Fonts to be inherited)-->
                     <title>Youtube.com Clone</title>
                         <link rel="preconnect" href="https://fonts.googleapis.com">
                         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+                        <link rel="stylesheet" href="styles/general.css">
+                        <link rel="stylesheet" href="styles/video.css">
+                        <link rel="stylesheet" href="styles/header.css">
                 </div>
 
-    </head>
+
+</head>
 <body>
-        <input class="searchbar" type ="text" placeholder="Search"> <!--Search Bar Goes Here-->
-
-    <div class ="video-preview">  <!--[Grid 1] Layout for entire the 3 frames)-->
-       
-
-        <div> <!--Frame 1(Video thumbnail)-->
-            <img class="thumbnail" src ="thumbnails/Marque.jpeg" alt = "Marque Sitting with Google's CEO">
-        </div>
-
-        <div class="video-info-grid">
-           <div class ="channel-picture">  <!--Frame 2(Profile picture)-->
-                <img  class = "profile-picture "   src="profile/channel-1.jpeg">
-            </div>
-
-        
-            <div class ="video-info">     <!--Frame 3(Video Info,Author & Stats )--> 
-                <p class ="video-title"> <!--p is default a block element that takes up the whole line-->
-                    Talking Tech and AI with Google CEO Sundar Pichai!
-                </p>
-
-                <p class ="video-author">
-
-                    Marques Brownlee
-        
-                </p>
-
-                <p class ="video-stats">
-                    3.4M views · 6 months ago
-                </p>
-        
+        <div class="header">
+            <div class="left-section">
+                <img  class="hamburger-menu" src="icons/hamburger-menu.svg">
+                <img  class="youtube-logo"src="icons/youtube-logo.svg">
                 
-            </div> <!--End of Frame #3--></div>
-           
-        </div>     
-        
-    </div><!--End of Grid or CHANNEL 1-->
-
-    <div class ="video-preview">  <!--[Grid 2] Layout for entire the 3 frames)-->
-       
-
-        <div> <!--Frame 1(Video thumbnail)-->
-            <img class="thumbnail" src ="thumbnails/dontlaf.webp" alt = "Marque Sitting with Google's CEO">
-        </div>
-
-        <div class="video-info-grid">
-           <div class ="channel-picture">  <!--Frame 2(Profile picture)-->
-                <img  class = "profile-picture "   src="profile/channel-2.jpeg">
             </div>
-
-        
-            <div class ="video-info">     <!--Frame 3(Video Info,Author & Stats )--> 
-                <p class ="video-title"> <!--p is default a block element that takes up the whole line-->
-                    Try Not to Laugh Challenge #9
-                </p>
-
-                <p class ="video-author">
-
-                    Markiplier
-        
-                </p>
-
-                <p class ="video-stats">
-                    19M views · 4 years ago
-                </p>
-        
-                
-            </div> <!--End of Frame #3--></div>
-           
-        </div>     
-        
-    </div><!--End of Grid or CHANNEL 2-->
-
-    <div class ="video-preview">  <!--[Grid 3] Layout for entire the 3 frames)-->
-       
-
-        <div> <!--Frame 1(Video thumbnail)-->
-            <img class="thumbnail" src ="thumbnails/thumbnail-3.webp" alt = "Marque Sitting with Google's CEO">
-        </div>
-
-        <div class="video-info-grid">
-           <div class ="channel-picture">  <!--Frame 2(Profile picture)-->
-                <img  class = "profile-picture "   src="profile/channel-3.jpeg">
+            <div class="middle-section">
+                <input class="search-bar" type ="text" 
+                placeholder="Search"> <!--Search Bar Goes Here-->
+            <button class="search-button">
+                <img src="Icons/search.svg">
+            </button>
+            <button  class="voice-search-button">
+                <img src="Icons/voice-search-icon.svg">
+            </button>
             </div>
-
+            <div class="right-section">
+                right-section
+            </div> 
         
-            <div class ="video-info">     <!--Frame 3(Video Info,Author & Stats )--> 
-                <p class ="video-title"> <!--p is default a block element that takes up the whole line-->
-                    Crazy Tik Toks Taken Moments Before DISASTER
-                </p>
-
-                <p class ="video-author">
-
-                    SSSniperWolf
+        </div>
         
-                </p>
+        <div class ="video-preview">  <!--[Grid 1] Layout for entire the 3 frames)-->
+            
 
-                <p class ="video-stats">
-                    12M views · 1 year ago
-                </p>
-        
-                
-            </div> <!--End of Frame #3--></div>
-           
-        </div>     
-        
-    </div><!--End of Grid or CHANNEL 3-->
+            <div> <!--Frame 1(Video thumbnail)-->
+                <img class="thumbnail" src ="thumbnails/Marque.jpeg" alt = "Marque Sitting with Google's CEO">
+            </div>
     
+            <div class="video-info-grid">
+            <div class ="channel-picture">  <!--Frame 2(Profile picture)-->
+                    <img  class = "profile-picture "   src="profile/channel-1.jpeg">
+                </div>
+    
+            
+                <div class ="video-info">     <!--Frame 3(Video Info,Author & Stats )--> 
+                    <p class ="video-title"> <!--p is default a block element that takes up the whole line-->
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+    
+                    <p class ="video-author">
+    
+                        Marques Brownlee
+            
+                    </p>
+    
+                    <p class ="video-stats">
+                        3.4M views · 6 months ago
+                    </p>
+            
+                    
+                </div> <!--End of Frame #3--></div>
+            
+            </div>     
+            
+        </div><!--End of Grid or CHANNEL 1-->
+        <div class ="video-preview">  <!--[Grid 2] Layout for entire the 3 frames)-->
+            
+
+            <div> <!--Frame 1(Video thumbnail)-->
+                <img class="thumbnail" src ="thumbnails/Marque.jpeg" alt = "Marque Sitting with Google's CEO">
+            </div>
+    
+            <div class="video-info-grid">
+            <div class ="channel-picture">  <!--Frame 2(Profile picture)-->
+                    <img  class = "profile-picture "   src="profile/channel-1.jpeg">
+                </div>
+    
+            
+                <div class ="video-info">     <!--Frame 3(Video Info,Author & Stats )--> 
+                    <p class ="video-title"> <!--p is default a block element that takes up the whole line-->
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+    
+                    <p class ="video-author">
+    
+                        Marques Brownlee
+            
+                    </p>
+    
+                    <p class ="video-stats">
+                        3.4M views · 6 months ago
+                    </p>
+            
+                    
+                </div> <!--End of Frame #3--></div>
+            
+            </div>     
+            
+        </div><!--End of Grid or CHANNEL 1-->
+
+        <div class ="video-preview">  <!--[Grid 3] Layout for entire the 3 frames)-->
+            
+
+            <div> <!--Frame 1(Video thumbnail)-->
+                <img class="thumbnail" src ="thumbnails/Marque.jpeg" alt = "Marque Sitting with Google's CEO">
+            </div>
+    
+            <div class="video-info-grid">
+            <div class ="channel-picture">  <!--Frame 2(Profile picture)-->
+                    <img  class = "profile-picture "   src="profile/channel-1.jpeg">
+                </div>
+    
+            
+                <div class ="video-info">     <!--Frame 3(Video Info,Author & Stats )--> 
+                    <p class ="video-title"> <!--p is default a block element that takes up the whole line-->
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+    
+                    <p class ="video-author">
+    
+                        Marques Brownlee
+            
+                    </p>
+    
+                    <p class ="video-stats">
+                        3.4M views · 6 months ago
+                    </p>
+            
+                    
+                </div> <!--End of Frame #3--></div>
+            
+            </div>     
+            
+        </div><!--End of Grid or CHANNEL 1-->
+
+        <div class ="video-preview">  <!--[Grid 4] Layout for entire the 3 frames)-->
+            
+
+            <div> <!--Frame 1(Video thumbnail)-->
+                <img class="thumbnail" src ="thumbnails/Marque.jpeg" alt = "Marque Sitting with Google's CEO">
+            </div>
+    
+            <div class="video-info-grid">
+            <div class ="channel-picture">  <!--Frame 2(Profile picture)-->
+                    <img  class = "profile-picture "   src="profile/channel-1.jpeg">
+                </div>
+    
+            
+                <div class ="video-info">     <!--Frame 3(Video Info,Author & Stats )--> 
+                    <p class ="video-title"> <!--p is default a block element that takes up the whole line-->
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+    
+                    <p class ="video-author">
+    
+                        Marques Brownlee
+            
+                    </p>
+    
+                    <p class ="video-stats">
+                        3.4M views · 6 months ago
+                    </p>
+            
+                    
+                </div> <!--End of Frame #3--></div>
+            
+            </div>     
+            
+        </div><!--End of Grid or CHANNEL 1-->
+
+        <div class ="video-preview">  <!--[Grid 5] Layout for entire the 3 frames)-->
+            
+
+            <div> <!--Frame 1(Video thumbnail)-->
+                <img class="thumbnail" src ="thumbnails/Marque.jpeg" alt = "Marque Sitting with Google's CEO">
+            </div>
+    
+            <div class="video-info-grid">
+            <div class ="channel-picture">  <!--Frame 2(Profile picture)-->
+                    <img  class = "profile-picture "   src="profile/channel-1.jpeg">
+                </div>
+    
+            
+                <div class ="video-info">     <!--Frame 3(Video Info,Author & Stats )--> 
+                    <p class ="video-title"> <!--p is default a block element that takes up the whole line-->
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+    
+                    <p class ="video-author">
+    
+                        Marques Brownlee
+            
+                    </p>
+    
+                    <p class ="video-stats">
+                        3.4M views · 6 months ago
+                    </p>
+            
+                    
+                </div> <!--End of Frame #3--></div>
+            
+            </div>     
+            
+        </div><!--End of Grid or CHANNEL 1-->
+
+        <div class ="video-preview">  <!--[Grid 6] Layout for entire the 3 frames)-->
+            
+
+            <div> <!--Frame 1(Video thumbnail)-->
+                <img class="thumbnail" src ="thumbnails/Marque.jpeg" alt = "Marque Sitting with Google's CEO">
+            </div>
+    
+            <div class="video-info-grid">
+            <div class ="channel-picture">  <!--Frame 2(Profile picture)-->
+                    <img  class = "profile-picture "   src="profile/channel-1.jpeg">
+                </div>
+    
+            
+                <div class ="video-info">     <!--Frame 3(Video Info,Author & Stats )--> 
+                    <p class ="video-title"> <!--p is default a block element that takes up the whole line-->
+                        Talking Tech and AI with Google CEO Sundar Pichai!
+                    </p>
+    
+                    <p class ="video-author">
+    
+                        Marques Brownlee
+            
+                    </p>
+    
+                    <p class ="video-stats">
+                        3.4M views · 6 months ago
+                    </p>
+            
+                    
+                </div> <!--End of Frame #3--></div>
+            
+            </div>     
+            
+        </div><!--End of Grid or CHANNEL 1-->
+
+    
+          
+        
+
+
+
+
+
+
+
+
+
+
+            
+    <div style="
+    margin-top: 30px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    row-gap:40px;
+    column-gap:16px;
+    "
+    >
+    
+      <div style="background-color:lightblue;height:200px " > </div>
+      <div style="background-color:lightpink; height:200px"><p></p></div>
+      <div style="background-color:lightblue; height:200px"> </div> 
+      <div style="background-color:lightpink; height:200px"><p></p></div>
+      <div style="background-color:lightblue; height:200px"><p></p></div>
+      <div style="background-color:lightpink; height:200px"><p></p></div>
+    </div>
+       
+
+    
+   
+
+        
+        
 </body>
 </html>
